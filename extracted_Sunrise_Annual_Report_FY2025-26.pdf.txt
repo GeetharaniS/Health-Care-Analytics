@@ -1,0 +1,206 @@
+SMH Annual Report FY2025-26  |  SYNTHETIC DATA - for training/demo use only
+Page 1
+Sunrise Multispeciality Hospital, Coimbatore
+Annual Report FY2025-26
+For the year 1 April 2025 - 31 March 2026 | Presented to the Board of Directors, June 2026
+1. Chairman's Message
+FY2025-26 was a year of growth and of hard lessons. We treated 11,200 inpatients (5,400 unique patients) and
+generated gross inpatient revenue of INR 146.83 crore. Demand for complex care - cardiology, nephrology and
+neurology - outpaced our capacity, while some wards remained under-used. Our 30-day readmission rate of
+12.6% is above our 10% target and above peers with structured follow-up programmes. In FY2026-27 our priority
+is simple: right patient, right bed, safe at home.
+2. Year at a Glance
+ Metric
+FY2025-26
+Target
+Inpatient admissions
+11,200
+-
+Gross inpatient revenue
+INR 146.83 Cr
+-
+Bed occupancy
+63.1%
+75-80%
+Average length of stay (ALOS)
+6.24 days
+< 5.8
+30-day readmission rate
+12.6%
+< 10%
+In-hospital mortality
+1.21%
+< 1.5%
+LAMA rate
+2.69%
+< 2%
+Average ER wait (emergency)
+43.5 min
+< 30 min
+Claim rejection rate
+9.2%
+< 5%
+Value of rejected claims
+INR 9.03 Cr
+-
+Avg claim settlement TAT
+14.5 days
+< 15
+48-hr follow-up call coverage
+54.8%
+> 90%
+Patient rating (1-5)
+4.03
+> 4.3
+Net Promoter Score
+6.4
+> 40
+Admissions peaked in October-December, driven by monsoon-season dengue and pneumonia in General
+Medicine and Pulmonology.
+
+
+SMH Annual Report FY2025-26  |  SYNTHETIC DATA - for training/demo use only
+Page 2
+3. Clinical & Operational Performance by Department
+ Department
+Admissions
+ALOS (d)
+Occupancy %
+Readmit %
+Revenue (Cr)
+Cardiology
+1,935
+7.4
+86.5
+20.8
+42.22
+Orthopaedics
+1,412
+5.8
+55.5
+5.8
+21.95
+Oncology
+871
+6.9
+64.8
+14.8
+20.51
+Nephrology
+1,074
+7.6
+88.0
+20.3
+14.11
+General Surgery
+1,281
+5.8
+57.2
+6.3
+13.15
+General Medicine
+2,121
+5.2
+49.7
+9.5
+11.51
+Neurology
+614
+7.7
+85.2
+16.2
+9.53
+Pulmonology
+1,075
+6.5
+75.6
+16.3
+8.42
+Obstetrics & Gynaecology
+817
+3.8
+28.5
+2.6
+5.41
+
+Capacity crunch: Cardiology, Nephrology and Neurology averaged 85-88% occupancy, triggering Red
+escalations on multiple days and deferral of elective cases.
+
+Under-utilisation: OBG (~29%) and General Medicine (~50%) have spare capacity that can be flexed to
+medical overflow.
+
+Cardiology is the largest revenue contributor (~29% of revenue) but also has one of the highest readmission
+rates.
+4. Readmissions - Our Biggest Quality Gap
+Patients who received a 48-hour follow-up call were readmitted at 8.1% versus 17.7% for those who did not -
+more than double. Yet only 54.8% of discharged patients were called. Chronic conditions (heart failure, CKD,
+COPD, stroke, uncontrolled diabetes), repeat admissions, ICU stay, long distance from hospital and late-evening
+discharge were the strongest risk factors identified by our analytics team.
+5. Financial Performance and Revenue Cycle
+ Payer
+Admissions
+Revenue (INR Cr)
+Cash
+3,355
+48.77
+Private Insurance
+3,165
+46.72
+PMJAY
+2,130
+20.07
+ESI
+771
+11.27
+
+
+SMH Annual Report FY2025-26  |  SYNTHETIC DATA - for training/demo use only
+Page 3
+Payer
+Admissions
+Revenue (INR Cr)
+Corporate
+730
+10.84
+CMCHIS
+1,049
+9.16
+Claim rejections cost the hospital INR 9.03 crore in FY2025-26. Incomplete documentation was the single largest
+reason, followed by missing pre-authorisation and package mismatch under government schemes - all
+preventable process failures. Government scheme claims (PM-JAY, CMCHIS, ESI) took longer to settle than
+private insurance.
+6. Patient Experience
+3,200 discharged patients responded to our survey (average rating 4.03/5, NPS 6.4). Top complaints: discharge
+taking more than five hours, no call after discharge, confusing insurance desk, and long ER waits. Readmitted
+patients gave markedly lower ratings.
+7. Strategic Priorities for FY2026-27
+Priority
+Initiative
+Target by Mar-2027
+Reduce readmissions
+AI readmission risk score at discharge; 100% 48-hr calls; pharmacist
+medicine reconciliation for chronic patients; tele-follow-up for patients >
+50 km
+Readmission < 10%
+Unlock capacity
+Discharge-before-noon; 60-min bed turnaround; flex OBG/General
+Medicine beds to medical overflow; 20 new cardiac beds in Q3
+Occupancy 75-80%, ALOS <
+5.8 d
+Stop revenue leakage
+Digital claim checklist; claims submitted within 3 working days; weekly
+rejection review; PM-JAY package-code audit
+Rejection < 5%; recover INR 4
+Cr
+Patient experience
+Discharge lounge; bilingual discharge summaries; ER fast-track for
+Red/Orange triage
+NPS > 40
+Digital & AI
+Gemini-powered staff assistant on policies and SOPs; live operations
+dashboard for bed managers
+Rolled out to all wards by Q2
+8. Outlook
+With the healthcare sector expanding into Tier-2 cities and payers tightening claim scrutiny, the Board expects
+12-15% revenue growth in FY2026-27, contingent on capacity expansion in cardiac care and on reducing
+preventable readmissions and claim losses.

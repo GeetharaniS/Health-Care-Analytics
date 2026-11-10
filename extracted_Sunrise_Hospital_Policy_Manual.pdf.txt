@@ -1,0 +1,173 @@
+SMH Policy & SOP Manual v4.2  |  SYNTHETIC DATA - for training/demo use only
+Page 1
+Sunrise Multispeciality Hospital, Coimbatore
+Hospital Policy & Standard Operating
+Procedures Manual
+Document No. SMH/QA/POL-001 | Version 4.2 | Effective 01-Apr-2026 | Approved by: Medical Superintendent & Quality Committee |
+Review cycle: annual
+1. Purpose and Scope
+This manual sets out the mandatory policies for inpatient care, discharge, bed management, insurance and
+claims, infection control, patient rights and grievance redressal at Sunrise Multispeciality Hospital (SMH). It
+applies to all 300 inpatient beds across nine clinical departments, all consultants, resident doctors, nursing staff,
+TPA/insurance desk, billing and front-office staff. Policies align with NABH 5th Edition standards.
+2. Admission Policy
+2.1 Emergency admissions
+
+Every patient arriving at Emergency must be triaged within 10 minutes using the 5-level colour triage (Red,
+Orange, Yellow, Green, Blue).
+
+Target door-to-admission (ER wait) time: under 30 minutes for Red/Orange and under 60 minutes for all
+others. Wait above 90 minutes must be logged as an incident.
+
+No emergency patient may be refused or delayed for want of deposit. Stabilisation comes first; financial
+counselling follows.
+2.2 Elective admissions
+
+Elective admissions are scheduled through the Admission Desk 24-72 hours in advance with a written cost
+estimate.
+
+For insured patients, pre-authorisation must be raised with the TPA/scheme at least 48 hours before an
+elective admission. Emergency pre-authorisation must be raised within 24 hours of admission.
+
+Elective surgeries in Cardiology, Nephrology and Neurology are rescheduled when department occupancy is
+above 90% (see Section 4).
+3. Discharge Policy (Discharge Before Noon)
+
+Discharge planning begins at admission; the expected date of discharge (EDD) must be recorded within 24
+hours of admission.
+
+Target: 60% of planned discharges completed before 12:00 noon. Discharges after 18:00 require Duty
+Medical Officer approval because late-evening discharges show higher readmission.
+
+Target time from discharge order to patient exit: 3 hours for cash patients and 4 hours for insured patients.
+
+Every discharge summary must contain diagnosis, procedures, medicines with dose and duration, danger
+signs, diet, follow-up date and a 24x7 helpline number (0422-400-7000), in English and Tamil.
+3.1 Medication Reconciliation
+A clinical pharmacist must complete medication reconciliation for every patient discharged on five or more
+medicines, and for all Cardiology, Nephrology, Pulmonology and Neurology patients. The pharmacist explains
+each medicine to the patient or caregiver using the teach-back method.
+4. Readmission Prevention Programme (Care Transitions)
+
+
+SMH Policy & SOP Manual v4.2  |  SYNTHETIC DATA - for training/demo use only
+Page 2
+
+A readmission is any unplanned admission to SMH within 30 days of a previous discharge. Planned
+readmissions (chemotherapy cycles, staged surgery) are excluded.
+
+At discharge, every patient receives a readmission risk score from the hospital's predictive model: Low (<10%),
+Medium (10-25%), High (>25%).
+
+All patients must receive a nurse follow-up call within 48 hours of discharge. The call checks symptoms,
+medicine availability and adherence, wound status and confirms the follow-up appointment.
+
+High-risk patients additionally receive: a 7-day follow-up OPD visit (free consultation), a day-14 phone call, and
+tele-consultation access for 30 days.
+
+Patients living more than 50 km away are offered tele-follow-up in place of the physical 7-day visit.
+
+Every readmission within 7 days is reviewed by the department head within 72 hours (root-cause review), and
+summarised at the monthly Quality Committee.
+5. Bed Management and Capacity Escalation
+Trigger
+Level
+Action
+Hospital occupancy > 85%
+Amber
+Bed manager huddle at 08:30 and 14:00; expedite discharges; open transit
+lounge
+Department occupancy > 90% for 3
+consecutive days
+Red
+Defer elective admissions in that department; borrow beds from
+low-occupancy wards (OBG, General Medicine) with nursing support
+ICU occupancy > 90%
+Red
+Intensivist reviews step-down candidates every 6 hours; Medical
+Superintendent informed; no elective cases needing post-op ICU
+ICU occupancy 100%
+Black
+Activate referral network; inform patients' families; CEO notified
+Bed turnaround (cleaning and readiness after discharge) must not exceed 60 minutes. The housekeeping
+supervisor is notified automatically from the HIS when a discharge is completed.
+6. Insurance, TPA and Claims Policy
+
+Accepted payers: Private health insurance via TPA, Corporate tie-ups, ESI, Ayushman Bharat PM-JAY and
+Tamil Nadu Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS).
+
+Final claim documents must be submitted within 3 working days of discharge. Any claim submitted later than
+7 days requires a written explanation from the TPA desk lead.
+
+Mandatory claim checklist: pre-auth approval, ID and scheme card, discharge summary, itemised bill,
+investigation reports, implant stickers and invoices (if any), and signed consent forms.
+
+Room-rent eligibility must be explained to every insured patient at admission to avoid proportionate deductions.
+
+For PM-JAY and CMCHIS, the package code booked must match the procedure performed; any change
+requires an enhancement request before discharge.
+
+Rejected or partially approved claims are re-appealed within 15 days. Claims rejected for 'incomplete
+documents' are reviewed weekly by the Revenue Cycle Manager.
+7. Billing and Financial Counselling
+
+Cost estimates are given in writing; final bills more than 15% above the estimate need the Billing Manager's
+approval and an explanation to the patient.
+
+Cash patients may request an interim bill at any time. Discounts above 10% need Medical Superintendent
+approval.
+
+Refunds for excess deposit are processed within 7 working days.
+8. Infection Prevention and Control
+
+Hand hygiene compliance target: 90% (audited monthly by the infection control nurse).
+
+
+SMH Policy & SOP Manual v4.2  |  SYNTHETIC DATA - for training/demo use only
+Page 3
+
+Surgical site infection (SSI) target below 1.5%; catheter-associated UTI below 2 per 1,000 catheter days.
+
+Antibiotic use follows the hospital antibiogram; restricted antibiotics need Infectious Disease consultant
+approval.
+9. Patient Rights, Feedback and Grievance Redressal
+
+Patients have the right to information about diagnosis, treatment, cost, and to a second opinion and copies of
+medical records (within 72 hours of request).
+
+Every discharged patient is invited to a feedback survey by SMS. Complaints are acknowledged within 24
+hours and closed within 7 days.
+
+Leaving Against Medical Advice (LAMA): the doctor must counsel the patient, document risks, and obtain a
+signed LAMA form. LAMA patients still receive the 48-hour follow-up call.
+
+Grievance officer: Patient Relations Manager, Ground Floor, Block A; email
+grievance@sunrisehospital.example.
+10. Data Privacy and AI Use
+
+Patient data is handled in line with the Digital Personal Data Protection Act, 2023. Only authorised staff may
+access the HIS.
+
+AI tools (readmission model, staff chatbot) support but never replace clinical judgement. The staff chatbot
+answers only from approved hospital documents and must show its source.
+
+Model performance is reviewed quarterly by the Quality and IT committees.
+11. Key Quality Indicators and Targets
+ Indicator
+Target
+30-day readmission rate
+< 10%
+Average length of stay
+< 5.8 days
+Bed occupancy
+75-80%
+ER triage time
+< 10 min
+Claim rejection rate
+< 5%
+48-hr follow-up call coverage
+> 90%
+LAMA rate
+< 2%
+Net Promoter Score
+> 40

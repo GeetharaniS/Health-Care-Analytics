@@ -1,0 +1,219 @@
+Problem Statement - Sunrise Hospital Analytics  |  SYNTHETIC DATA - for training/demo use only
+Page 1
+Healthcare Analytics Capstone
+Reducing 30-Day Readmissions &
+Revenue Leakage at Sunrise
+Multispeciality Hospital
+Problem statement, dataset guide and deliverables - Dashboard | Predictive Model | GenAI RAG Chatbot
+(Gemini)
+1. Business Context (real-world grounding)
+
+Indian private hospitals report 30-day readmission rates of roughly 8-14%, rising toward ~18% for chronic
+patients without structured post-discharge follow-up.
+
+Large listed chains run at ~64-68% bed occupancy; growth now depends on using existing beds better
+(ALOS, occupancy, revenue per bed).
+
+Government schemes (AB-PMJAY, ~38,000 empanelled hospitals) settle claims within a 15-day turnaround
+target, and AI-based fraud/claim checks are tightening - documentation errors now directly cost revenue.
+
+Hospitals are expected by NABH and payers to show quality metrics: readmission, mortality, LAMA, ER wait,
+patient experience.
+2. The Scenario
+Sunrise Multispeciality Hospital is a fictional 300-bed NABH-accredited hospital in Coimbatore serving
+Coimbatore, Tiruppur, Erode, Pollachi, Palakkad and Salem. FY2025-26 (Apr-2025 to Mar-2026) closed with:
+ KPI
+FY25-26 actual
+Target
+30-day readmission rate
+12.6%
+< 10%
+Bed occupancy (overall)
+63.1%
+75-80%
+Average length of stay
+6.24 days
+< 5.8 days
+Insurance claim rejection
+9.2%  (INR 9.03 Cr)
+< 5%
+48-hr follow-up call coverage
+54.8%
+> 90%
+Net Promoter Score
+6.4
+> 40
+The CEO has observed that Cardiology, Nephrology and Neurology are running near full capacity (85-88%
+occupancy) while OBG and General Medicine are under-utilised, readmissions are concentrated in
+chronic-disease patients, and insurance rejections are eroding margin.
+3. Problem Statement
+As a Healthcare Data Analyst / AI Engineer, use FY2025-26 hospital data to (a) explain what drives 30-day
+readmissions, bed bottlenecks and claim rejections, (b) predict which patients are at high risk of
+readmission at the time of discharge, and (c) give doctors, nurses and administrators an AI assistant that
+answers questions from the hospital's policy manual and annual report.
+4. Deliverables
+#
+Deliverable
+Tools
+Key outputs
+1
+Executive Dashboard
+Power BI / Tableau / Looker Studio /
+Streamlit
+KPI cards, monthly trend, dept heat-map, payer mix, claim
+rejection Pareto, NPS
+2
+Readmission Risk
+Model
+Python - scikit-learn / XGBoost
+Binary classifier on readmitted_30d; ROC-AUC, recall at
+top-20% risk, SHAP drivers, risk-band list
+
+
+Problem Statement - Sunrise Hospital Analytics  |  SYNTHETIC DATA - for training/demo use only
+Page 2
+#
+Deliverable
+Tools
+Key outputs
+3
+RAG Chatbot
+Gemini API (gemini embeddings +
+Gemini Flash),
+LangChain/LlamaIndex,
+ChromaDB/FAISS, Streamlit
+Answers grounded in Policy Manual + Annual Report with
+page citations
+4
+Recommendation
+Memo
+Slides / doc
+3-5 actions with estimated INR impact
+
+
+Problem Statement - Sunrise Hospital Analytics  |  SYNTHETIC DATA - for training/demo use only
+Page 3
+5. Dataset Files (synthetic, FY2025-26)
+File
+Rows
+Grain
+Use it for
+admissions.csv
+11,200
+1 row per inpatient admission
+Core fact table: dashboard + ML target
+readmitted_30d
+patients.csv
+6,500
+1 row per patient
+Demographics, comorbidities, payer
+(dimension)
+departments.csv
+9
+1 row per department
+Beds, ICU beds, consultants (dimension)
+insurance_claims.csv
+~6,900
+1 row per insured admission
+Claim status, rejection reason, TAT, revenue
+leakage
+daily_bed_census.csv
+3,285
+department x day
+Occupancy trend, ICU load,
+admissions/discharges flow
+patient_feedback.csv
+3,200
+1 row per surveyed
+discharge
+Ratings, NPS, free-text comments
+Sunrise_Hospital_Policy_Manual.pdf
+-
+RAG document
+Chatbot knowledge base: SOPs, timelines,
+rules
+Sunrise_Annual_Report_FY2025-26.
+pdf
+-
+RAG document
+Chatbot knowledge base: performance,
+finance, strategy
+Joins: admissions.patient_id -> patients | admissions.dept_id -> departments | insurance_claims.admission_id /
+patient_feedback.admission_id -> admissions | daily_bed_census.dept_id -> departments
+6. Data Dictionary - admissions.csv (main table)
+Column
+Description
+admission_id, patient_id
+Unique keys
+age, gender, city, distance_km
+Patient demographics; distance from hospital
+dept_id, department, icd10_code, diagnosis
+Treating department and primary ICD-10 diagnosis
+admission_type
+Emergency / Elective
+admit_date, discharge_date, los_days
+Dates and length of stay (days)
+icu_stay
+TRUE if any ICU stay
+er_wait_minutes
+ER door-to-admission wait (Emergency only; few nulls - clean it)
+attending_doctor
+Masked doctor code
+payer
+Cash, Private Insurance, PMJAY, CMCHIS, ESI, Corporate
+comorbidity_count, diabetes, hypertension, ckd,
+copd, heart_disease, smoker, bmi
+Clinical risk factors (bmi has a few nulls)
+prior_admissions_12m
+Earlier admissions of same patient in the year
+discharge_disposition
+Discharged Home / LAMA / Transfer Out / Death
+discharge_hour
+Hour of discharge (24h)
+med_reconciliation_done, followup_call_48h,
+followup_visit_7d
+Care-transition process flags
+total_bill_inr
+Final bill amount
+readmitted_30d
+TARGET - readmitted within 30 days (eligible: Home/LAMA)
+days_to_readmission
+Days until readmission (leakage - drop for modelling)
+7. Suggested Analysis Questions
+
+Which departments and diagnoses drive readmissions? How does 48-hr follow-up change the rate?
+
+Where are the bed bottlenecks by month and department? What ALOS reduction frees how many bed-days?
+
+Which payer and rejection reason causes the most revenue leakage (Pareto)?
+
+
+Problem Statement - Sunrise Hospital Analytics  |  SYNTHETIC DATA - for training/demo use only
+Page 4
+
+Does ER wait time or readmission reduce patient ratings / NPS?
+8. Modelling Guidelines
+
+Filter to discharge_disposition in (Discharged Home, LAMA). Drop IDs, dates, days_to_readmission (leakage).
+
+Class imbalance ~12.6% positive - use stratified split, class_weight, evaluate ROC-AUC + PR-AUC +
+recall@top-20%.
+
+Baseline: Logistic Regression; then Random Forest / XGBoost. A reasonable target is ROC-AUC 0.72-0.80.
+
+Explain with SHAP; convert scores into Low / Medium / High risk bands for the discharge team.
+9. RAG Chatbot - Sample Test Questions
+
+What is the target time from discharge order to patient exit?
+
+Who must be called within 48 hours of discharge and what is checked?
+
+Within how many days must an insurance claim be submitted after discharge?
+
+What was the hospital's readmission rate in FY2025-26 and which department was highest?
+
+What actions are planned for FY2026-27 to reduce claim rejections?
+
+What is the escalation trigger when ICU occupancy crosses the threshold?
+All data, names and documents are synthetic. Market context drawn from public reporting (Economic Survey of India, Statista/industry
+reports, PIB/Parliament replies on AB-PMJAY, 2025-2026).
