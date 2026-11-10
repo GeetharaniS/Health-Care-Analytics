@@ -1,0 +1,10 @@
+dept_id,department,beds,consultants,icu_beds
+D01,Cardiology,45,9,7
+D02,Orthopaedics,40,8,6
+D03,General Medicine,60,12,9
+D04,General Surgery,35,7,5
+D05,Nephrology,25,5,4
+D06,Pulmonology,25,5,4
+D07,Obstetrics & Gynaecology,30,6,4
+D08,Oncology,25,5,4
+D09,Neurology,15,4,2
